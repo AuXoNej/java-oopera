@@ -12,6 +12,6 @@ public class Director extends Person {
     }
 
     public void printFullName() {
-        System.out.println(super.getFullName());
+        System.out.println(getFullName());
     }
 }
