@@ -17,6 +17,8 @@ public class Theatre {
         var actorVasily = new Actor("Василий", "Сидоров", "male", 40);
         var actorAnna = new Actor("Анна", "Михайлова", "female", 30);
 
+        var actorOlga = new Actor("Ольга", "Михайлова", "female", 20);
+
         var directorVasily = new Director("Василий", "Петров", "male", 15);
         var directorIvan = new Director("Иван", "Михайлов", "male", 10);
 
@@ -71,6 +73,11 @@ public class Theatre {
         // Попробуйте заменить в другом спектакле несуществующего актёра
         System.out.println(show1.getTitle() + ":");
         show1.changeActor(actorAnna, actorMichail);
+        System.out.println("=================\n");
+
+        // Попробуем заменить актёра на однофамильца
+        System.out.println(balet1.getTitle() + ":");
+        balet1.changeActor(actorAnna, actorOlga);
         System.out.println("=================\n");
 
         // Для оперного и балетного спектакля выведите на экран текст либретто.
